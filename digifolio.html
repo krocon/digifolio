@@ -100,12 +100,11 @@
         let percentIncreaseA = Math.round((sumA * 100 / portfolio.coinsCosts) - 100);
         let percentIncreaseB = Math.round((sumB * 100 / portfolio.coinsCosts) - 100);
         rows.push(['', '',
-          '', '-' + Math.round(portfolio.coinsCosts) + ' EUR',
-          '', '-' + Math.round(portfolio.coinsCosts) + ' EUR']);
-        rows.push(['', '',
           'SUM:', Math.round(sumA) + ' EUR',
           'SUM:', Math.round(sumB) + ' EUR']);
-
+        rows.push(['', '',
+          '', '-' + Math.round(portfolio.coinsCosts) + ' EUR',
+          '', '-' + Math.round(portfolio.coinsCosts) + ' EUR']);
         rows.push(['', ''
           , '->', (percentIncreaseA < 0) ? '-' : '+' + percentIncreaseA + ' %'
           , '->', (percentIncreaseB < 0) ? '-' : '+' + percentIncreaseB + ' %']);
